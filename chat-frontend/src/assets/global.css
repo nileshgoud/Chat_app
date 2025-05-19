@@ -1,0 +1,138 @@
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Firefox scrollbar styles */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c1c1c1 #f1f1f1;
+}
+
+.chat-header {
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  transition: border-color 0.3s ease;
+}
+
+.chat-header-info {
+  margin-left: 16px;
+  flex-grow: 1;
+}
+
+.online-status {
+  transition: color 0.3s ease;
+}
+
+.online-status.online {
+  color: #4caf50; /* Green color for online */
+}
+
+.online-status.offline {
+  color: #f44336; /* Red color for offline */
+}
+
+/* Sidebar styles */
+.sidebar-drawer {
+  width: 60px;
+  flex-shrink: 0;
+}
+
+.sidebar-drawer .MuiDrawer-paper {
+  width: 60px;
+  box-sizing: border-box;
+  background-color: var(--background-default);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  z-index: 1210;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+}
+
+.sidebar-top {
+  text-align: center;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+  text-align: center;
+}
+
+/* Logout Modal styles */
+.logout-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background-color: var(--background-paper);
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  padding: 32px;
+}
+
+.logout-message {
+  margin-top: 16px;
+}
+
+.logout-actions {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+/* NoChatSelected styles */
+.no-chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 24px;
+  text-align: center;
+}
+
+.no-chat-icon-button {
+  width: 80px;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.no-chat-icon-button:hover {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.no-chat-icon {
+  font-size: 40px;
+}
+
+.no-chat-message {
+  margin-bottom: 24px;
+}
